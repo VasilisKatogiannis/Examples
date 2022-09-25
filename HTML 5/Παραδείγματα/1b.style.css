@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    font-size:50px;
+    text-align:center;
+}
+.left-item{
+    padding:10px;
+    background-color:red;
+    flex: 50%;
+}
+.right-item{
+    padding:10px;
+    background-color:blue;
+    flex:50%;
+}
+@media screen and (max-width:800px){
+    .container{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Test</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="text">1. Text Form</label>
+        <input type="text" id="text" name="text" placeholder="Συμπληρώστε το Ονοματεπώνυμο σας." size="30">
+        <br>
+        <br>
+        <h4>2. Radio Form</h4>
+        <label for="red">RED</label>
+        <input type="radio" id="red" name="radio" value="RED">
+        <label for="blue">BLUE</label>
+        <input type="radio" id="blue" name="radio" value="BLUE">
+        <br>
+        <br>
+        <h4>3. Checkbox Form</h4>
+        <label for="arta">Άρτα</label>
+        <input type="checkbox" id="arta" name="polis" value="arta">
+        <label for="preveza">Πρέβεζα</label>
+        <input type="checkbox" id="preveza" name="polis" value="preveza">
+        <label for="giannena">Γιάννενα</label>
+        <input type="checkbox" id="giannena" name="polis" value="giannena">
+        <br>
+        <br>
+        <label for="date">4. Date form & Hidden</label>
+        <input type="date" id="date" name="date">
+        <input type="hidden" id="hidden" name="hidden" value="vasilis">
+        <br>
+        <br>
+        <label for="email">5. Disabled form</label>
+        <input type="email" id="email" name="email" placeholder="π.χ. vasilis@gmail.com" disabled>
+        <br>
+        <br>
+        <label for="browser">6. Λίστα Δεδομένων</label>
+        <input list="browser">
+        <datalist id="browser" name="browser">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <br>
+        <label for="cars">7. Λίστα Επιλογής</label>
+        <select id="cars" name="cars">
+            <option value="Toyota">Toyota</option>
+            <option value="Ferrari" selected>Ferrari</option>
+            <option value="BMW">BMW</option>
+        </select>
+        <br>
+        <br>
+        <label for="comment">8. Μεγάλο Πεδίο Καταχώρισης Κειμένου</label>
+        <textarea id="comment" name="comment" placeholder="Write your comment.." rows="4" cols="10"></textarea>
+        <br>
+        <br>
+        <label for="disk">9. Μετρητής</label>
+        <meter id="disk" name="disk" min="0" max="100" value="30">30% of C:</meter>
+        <br>
+        <br>
+        <label>10. Μπάρα Προόδου</label>
+        <progress id="work" name="work" value="50" max="100"></progress>
+        <br>
+        <br>
+        <input type="submit" value="Αποστολή">
+        <input type="reset" value="Διαγραφή Δεδομένων">
+    </form>
+</body>
+</html>

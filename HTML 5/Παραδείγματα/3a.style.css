@@ -1,0 +1,15 @@
+*{
+    box-sizing:border-box;
+}
+div{
+    background-color:yellow;
+    text-align:center;
+    font-size:20px;
+    padding:20px;
+    font-weight:bold;
+}
+@media screen and (max-width:600px){
+    div{
+        display:none;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{border-collapse: collapse;}
+        td{height:50px;}
+        tr.row{background-color:red;
+                 color:white;}
+        .colomn{background-color:green;
+                 color:white;}
+        .empty{background-color:black;}
+        .colspan{background-color:cyan;}
+        .rowspan{background-color:orange;}
+        #rowspan{background-color:yellow;}
+        #colspan{background-color:purple;}
+    </style>
+</head>
+<body>
+<!-- Table Section -->
+        <!-- To width/πλάτος στο 100% της οθόνης -->
+        <table cellpadding="10" border="3" style="width:100%;">
+            <!-- Λεζάντα ή Τίτλος του πίνακα -->
+            <caption>
+                <details>
+                    <summary>Table Example</summary>
+                    <p>Εδώ θα μπορούσαμε να γράψουμε επιπλέον πληροφορίες για τον πίνακα και τα δεδομένα του.</p>
+                </details>
+            </caption>
+            <tr class="row">
+                <!-- Το πρώτο κελί είναι κενό -->
+                <th class="empty" style="width:40%;"></th>
+                <th>Left</th>
+                <th style="width:30%;">Center</th>
+                <th>Right</th>
+            </tr>
+            <tr>
+                <th class="colomn">Top</th>
+                <td style="text-align:left; vertical-align:top;">1</td>
+                <td style="text-align:center; vertical-align:top;">2</td>
+                <td style="text-align:right; vertical-align:top;">3</td>
+            </tr>
+            <tr>
+                <th class="colomn">Middle</th>
+                <td style="text-align:left; vertical-align:middle;">4</td>
+                <td style="text-align:center; vertical-align:middle;">5</td>
+                <td style="text-align:right; vertical-align:middle;">6</td>
+            </tr>
+            <tr>
+                <th class="colomn">Bottom</th>
+                <td style="text-align:left; vertical-align:bottom;">7</td>
+                <td style="text-align:center; vertical-align:bottom;">8</td>
+                <td style="text-align:right; vertical-align:bottom;">9</td>
+            </tr>
+            <!-- "Νέος" εσωτερικός πίνακας -->
+            <tr>
+                <th id="colspan" colspan="2">Colspan 2</th>
+                <th class="colspan">Στήλη A</th>
+                <th class="colspan" rowspan="2">Στήλη B</th>
+            </tr>
+            <tr>
+                <th id="rowspan" rowspan="2">Rowspan 2</th>
+                <th class="rowspan">Γραμμή Α</th>
+                <td style="text-align:center;">i</td>
+            </tr>
+            <tr>
+                <th class="rowspan">Γραμμή Β</th>
+                <td style="text-align:center;">ii</td>
+                <td style="text-align:center;">iii</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border="3">
+            <caption style="font-weight:bold;">Colgroup Table</caption>
+            <colgroup>
+                <col span="2" style="background-color: cyan;">
+                <col span="1">
+                <col span="1" style="background-color: pink;">
+            </colgroup>
+            <tr>
+                <th>Στήλη 1η</th>
+                <th>Στήλη 2η</th>
+                <th>Στήλη 3η</th>
+                <th>Στήλη 4η</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border="3">
+            <caption style="font-weight:bold;">Πίνακας ομαδοποίησης γραμμών</caption>
+            <thead style="background-color:green;">
+                 <tr>
+                    <th>Στήλη 1η</th>
+                    <th>Στήλη 2η</th>
+                    <th>Στήλη 3η</th>
+                    <th>Στήλη 4η</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tfoot style="background-color: yellow;;">
+                <th>6</th>
+                <th>8</th>
+                <th>10</th>
+                <th>12</th>
+            </tfoot>
+        </table>
+<br>
+<br>
+<br>
+<br>
+<h1>Click <a href="/Index.html#Table">RETURN</a></h1>
+</body>
+</html>

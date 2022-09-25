@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="text_form">1. Text Form</label>
+        <input type="text" name="text_form" id="text_form" placeholder="Πληκτρολογίστε στην ερώτηση σας" size="40" maxlength="5" required>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>2. Radio Form</h2>
+        <label for="red_radio">Red</label>
+        <input type="radio" name="radio_form" id="red_radio" value="Red">
+        <label for="blue_radio">Blue</label>
+        <input type="radio" name="radio_form" id="blue_radio" value="Blue">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>3. Checkbox Form</h2>
+        <label for="preveza">Πρέβεζα</label>
+        <input type="checkbox" id="preveza" name="checkbox_form" value="preveza">
+        <label for="arta">Άρτα</label>
+        <input type="checkbox" id="arta" name="checkbox_form" value="arta" checked>
+        <label for="ioannina">Ιωάννινα</label>
+        <input type="checkbox" id="ioannina" name="checkbox_form" value="ioannina">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>4. Date Form & Hibben Πεδίo</h2>
+        <label for="birthdate">Ημερομηνία Γέννησης</label>
+        <input type="date" id="birthdate">
+        <input type="hidden" id="birthdate" name="user" value="vasilis">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>5. Απενεργοποιημένο χειριστήριο</label>
+        <input type="email" id="disabled" name="disabled" value="vasilis@vasilis.gr" disabled>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <lable for="browser">6. Datalist Form</lable>
+        <input list="browser" size="10">
+        <datalist id="browser">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Opera">
+        </datalist>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="cars">7. Λίστα Επιλογής</label>
+        <select id="cars" name="cars">
+            <option value="Nissan">Nissan</option>
+            <option value="Toyota" selected>Toyota</option>
+            <option value="BMW">BMW</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="textarea">8. Μεγάλο Πεδίο Καταχώρισης Κειμένου</label>
+        <textarea rows="10" cols="50" name="textarea" id="textarea">Αφήστε ένα σχόλιο</textarea>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="progress">9. Μπάρα Προόδου </label>
+        <progress id="progress" value="50" max="100"></progress>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="meter">10. Μετρητής - 70% χρήσης</label>
+        <meter id="meter" name="meter" value="70" min="0" max="100">70% use of Disk</meter>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Αποστολή">
+        <input type="reset" value="Διαγραφή Δεδομένων">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2><a href="/Index.html#Forms">RETURN</a> to index</h2>
+        <br>
+    </form>
+    
+</body>
+</html>

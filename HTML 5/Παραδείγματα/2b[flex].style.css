@@ -1,0 +1,19 @@
+*{
+    box-sizing:border-box;
+}
+.container{
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction:row;
+}
+a{
+    text-align:center;
+    font-size:30px;
+    padding:10px;
+}
+@media screen and (max-width:600px){
+    .container{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,75 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+.header{
+    background-color:yellow;
+    text-align:center;
+    padding:20px;
+}
+.top{
+    background-color:rgb(42, 206, 206);
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+.navbar{
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction:row;
+}
+a{
+    text-align:center;
+    font-size:20px;
+    padding:10px 20px;
+}
+a:hover{
+    background-color:gray;
+}
+a:link{
+    color:white;
+    text-decoration-line:none;
+}
+a:visited{
+    color:red;
+}
+.row{
+    display:flex;
+    flex-direction:row;
+}
+.column1{
+    padding:20px;
+    flex:30%;
+    background-color:lightgray;
+}
+.column2{
+    flex:70%;
+    padding:20px;
+}
+.image1{
+    /*Το flex ίσως είναι περιττό*/
+    flex: 100%;
+    background-color:gray;
+    height:100px;
+    padding:20px;
+}
+.image2{
+    /*Το flex ίσως είναι περιττό*/
+    flex: 100%;
+    background-color:gray;
+    padding:20px;
+}
+.footer{
+    background-color:rgb(63, 62, 62);
+    text-align:center;
+    padding:50px 100px;
+}
+@media screen and (max-width:700px){
+    .navbar{
+        flex-direction:column;
+    }
+    .row{
+        flex-direction:column;
+    }
+}

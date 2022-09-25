@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Test</title>
+    <style>
+        table{width: 100%; border-collapse: collapse;}
+        th,td{height: 50px;}
+        .First-Row{background-color: red;}
+        .First-Colomn{background-color: green;}
+        .ColomnAB{background-color: cyan;}
+        .RowAB{background-color: orange;}
+        #Colspan{background-color: purple;}
+        #Rowspan{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <table border="3" cellpadding="10px">
+        <caption>Table 1</caption>
+        <tr>
+            <th style="width:40%; background-color: black;"></th>
+            <th class="First-Row">Left</th>
+            <th class="First-Row" style="width:30%;">Center</th>
+            <th class="First-Row">Right</th>
+        </tr>
+        <tr>
+            <th class="First-Colomn">Top</th>
+            <td style="text-align:left; vertical-align:top;">1</td>
+            <td style="text-align:center; vertical-align:top;">2</td>
+            <td style="text-align:right; vertical-align:top;">3</td>
+        </tr>
+        <tr>
+            <th class="First-Colomn">Middle</th>
+            <td style="text-align:left; vertical-align: middle;">4</td>
+            <td style="text-align:center; vertical-align:middle;">5</td>
+            <td style="text-align:right; vertical-align:middle;">6</td>
+        </tr>
+        <tr>
+            <th class="First-Colomn">Bottom</th>
+            <td style="text-align:left; vertical-align:bottom;">7</td>
+            <td style="text-align:center; vertical-align:bottom;">8</td>
+            <td style="text-align:right; vertical-align:bottom;">9</td>
+        </tr>
+        <tr>
+            <th id="Colspan" colspan="2">Colspan 2</th>
+            <th class="ColomnAB">Στήλη Α</th>
+            <th class="ColomnAB" rowspan="2">Στήλη Β</th>
+        </tr>
+        <tr>
+            <th id="Rowspan" rowspan="2">Rowspan 2</th>
+            <th class="RowAB">Γραμμή Α</th>
+            <td style="text-align:center;">i</td>
+        </tr>
+        <tr>
+            <th class="RowAB">Γραμμη Β</th>
+            <td style="text-align:center;">ii</td>
+            <td style="text-align:center;">iii</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="3">
+        <colgroup>
+            <col span="2" style="background-color: cyan;">
+            <col span="1">
+            <col span="1" style="background-color: pink;">
+        </colgroup>
+        <tr>
+            <th>Στήλη 1</th>
+            <th>Στήλη 2</th>
+            <th>Στήλη 3</th>
+            <th>Στήλη 4</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,19 @@
+div{
+    width:200px;
+    height:200px;
+    margin:10px;
+    display:inline-block;
+}
+.one{
+    background-color:red;
+}
+.two{
+    background-color:green;
+}
+.three{
+    background-color:blue;
+    transition:background-color 2s;
+}
+.three:hover{
+    background-color:yellow;
+}

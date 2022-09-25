@@ -1,0 +1,21 @@
+div{
+    width:200px;
+    height:200px;
+    display:inline-block;
+}
+.one{
+    background-color:red;
+    transform: translate(50px,-50px);
+}
+.two{
+    background-color: green;
+    transform:rotate(45deg);
+}
+.three{
+    background-color:blue;
+    transform:scale(0.5,0.7);
+}
+.four{
+    background-color:yellow;
+    transform:skew(20deg,45deg);
+}
